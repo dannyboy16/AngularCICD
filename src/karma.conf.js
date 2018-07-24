@@ -28,7 +28,7 @@ module.exports = function (config) {
     junitReporter: {
       outputDir: 'karma-results',
       outputFile: 'karma-results.xml'
-    }
+    },
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
