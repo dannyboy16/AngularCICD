@@ -10,6 +10,7 @@ module.exports = function (config) {
       require('karma-chrome-launcher'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage-istanbul-reporter'),
+      require('karma-webpack'), //--
       require('@angular-devkit/build-angular/plugins/karma')
     ],
     client: {
@@ -25,6 +26,10 @@ module.exports = function (config) {
       './app/app.component.spec.ts'
     ],
     */
+   // -- added
+    preprocessors: {
+      './src/test.ts': ['webpack']
+    },
     //reporters: ['progress', 'kjhtml'],
     reporters: ['progress', 'coverage', 'dots', 'junit'],
     junitReporter: {
