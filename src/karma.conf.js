@@ -20,9 +20,11 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly'],
       fixWebpackSourcePaths: true
     },
+    /*
     files: [
       './app/app.component.spec.ts'
     ],
+    */
     //reporters: ['progress', 'kjhtml'],
     reporters: ['progress', 'coverage', 'dots', 'junit'],
     junitReporter: {
