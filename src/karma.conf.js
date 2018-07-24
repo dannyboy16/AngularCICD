@@ -20,6 +20,12 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly'],
       fixWebpackSourcePaths: true
     },
+    files: [
+      './node_modules/angular/angular.js',
+      './node_modules/angular-ui-router/release/angular-ui-router.js',
+      './node_modules/angular-mocks/angular-mocks.js',
+      './app/app.js',
+    ],
     //reporters: ['progress', 'kjhtml'],
     reporters: ['progress', 'coverage', 'dots', 'junit'],
     junitReporter: {
