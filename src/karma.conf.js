@@ -19,7 +19,8 @@ module.exports = function (config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     preprocessors : {
-      '**/app/*.ts': 'coverage'
+      //'**/app/*.ts': 'coverage'
+      'app/*.ts': 'coverage'
     },
     coverageReporter: {
       type : 'html',
